@@ -3,7 +3,7 @@
     {
       "id": 1,
       "text": "Learn Vanilla JavaScript",
-      "completed": true,
+      "completed": false,
       "color": "yellow"
     },
     {
@@ -14,13 +14,13 @@
     },
     {
       "text": "Learn Redux Basics",
-      "completed": true,
+      "completed": false,
       "id": 4,
       "color": "red"
     },
     {
       "text": "Learn Redux fundamentals",
-      "completed": true,
+      "completed": false,
       "id": 5,
       "color": "red"
     },
@@ -31,7 +31,7 @@
     },
     {
       "text": "Learn Redux Toolkit",
-      "completed": false,
+      "completed": true,
       "id": 7
     }
   ]
