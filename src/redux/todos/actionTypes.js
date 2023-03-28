@@ -4,3 +4,5 @@ export const COLORSELECTED = 'todos/colorSelected';
 export const DELETED = 'todos/deleted';
 export const ALLCOMPLTED = 'todos/allCompleted';
 export const CLEARCOMPLETED = 'todos/clearCompleted'
+export const FETCH_TODOS = 'todos/fetchTodos'
+

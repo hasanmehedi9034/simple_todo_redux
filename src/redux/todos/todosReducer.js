@@ -1,10 +1,12 @@
 import { nextTodoId } from "../../utils/todoId";
-import { ADDED, ALLCOMPLTED, CLEARCOMPLETED, COLORSELECTED, DELETED, TOGGLED } from "./actionTypes";
+import { ADDED, ALLCOMPLTED, CLEARCOMPLETED, COLORSELECTED, DELETED, FETCH_TODOS, TOGGLED } from "./actionTypes";
 import { initialTodosState } from "./initialState";
 
 
 const todosReducer = (state = initialTodosState, action) => {
     switch (action.type) {
+        case FETCH_TODOS:
+            return action.payload
         case ADDED:
             return [
                 ...state,
