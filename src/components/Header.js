@@ -4,6 +4,7 @@ import tickImage from "../assets/images/double-tick.png";
 import noteImage from "../assets/images/notes.png";
 import plusImage from "../assets/images/plus.png";
 import { added, allCompleted, clearCompleted } from "../redux/todos/actions";
+import { clearCompletedTodoList } from "../redux/todos/thunk/clearCompleted";
 
 export default function Header() {
     const dispatch = useDispatch();
@@ -20,7 +21,7 @@ export default function Header() {
     }
 
     const handleClearCompleted = () => {
-        dispatch(clearCompleted())
+        dispatch(clearCompletedTodoList)
     }
 
     return (

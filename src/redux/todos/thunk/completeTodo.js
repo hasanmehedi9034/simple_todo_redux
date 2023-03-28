@@ -5,7 +5,7 @@ export const toggleStatus = (id, currentStatus) => {
         await fetch(`http://localhost:9000/todos/${id}`, {
             method: 'PATCH',
             body: JSON.stringify({
-                completed: !currentStatus
+                completed: !currentStatus,
             }),
             headers: {
                 'content-type': 'application/json; charset=UTF-8'

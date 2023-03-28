@@ -1,38 +1,3 @@
 {
-  "todos": [
-    {
-      "id": 1,
-      "text": "Learn Vanilla JavaScript",
-      "completed": false,
-      "color": "yellow"
-    },
-    {
-      "id": 3,
-      "text": "Learn React JS",
-      "completed": true,
-      "color": "yellow"
-    },
-    {
-      "text": "Learn Redux Basics",
-      "completed": false,
-      "id": 4,
-      "color": "red"
-    },
-    {
-      "text": "Learn Redux fundamentals",
-      "completed": false,
-      "id": 5,
-      "color": "red"
-    },
-    {
-      "text": "learn Redux",
-      "completed": false,
-      "id": 6
-    },
-    {
-      "text": "Learn Redux Toolkit",
-      "completed": true,
-      "id": 7
-    }
-  ]
+  "todos": []
 }
