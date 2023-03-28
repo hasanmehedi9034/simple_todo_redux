@@ -1,4 +1,4 @@
 export const initialStateFilter = {
-    status: 'all',
+    status: 'All',
     colors: []
 }
