@@ -1,3 +1,16 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "text": "learn modern js",
+      "completed": false,
+      "id": 4,
+      "color": ""
+    },
+    {
+      "text": "mehedi",
+      "completed": false,
+      "id": 5,
+      "color": ""
+    }
+  ]
 }

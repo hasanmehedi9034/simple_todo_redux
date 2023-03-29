@@ -3,7 +3,8 @@ import { useDispatch } from "react-redux";
 import tickImage from "../assets/images/double-tick.png";
 import noteImage from "../assets/images/notes.png";
 import plusImage from "../assets/images/plus.png";
-import { added, allCompleted, clearCompleted } from "../redux/todos/actions";
+import { addTodo } from "../redux/todos/thunk/addTodo";
+import { allCompletedTodo } from "../redux/todos/thunk/allTodoCompleted";
 import { clearCompletedTodoList } from "../redux/todos/thunk/clearCompleted";
 
 export default function Header() {
@@ -12,12 +13,12 @@ export default function Header() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch(added(todoText));
+        dispatch(addTodo(todoText));
         setTodoText('');
     }
 
     const handleCompletedAllTask = () => {
-        dispatch(allCompleted());
+        dispatch(allCompletedTodo);
     }
 
     const handleClearCompleted = () => {

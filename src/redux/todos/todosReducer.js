@@ -7,12 +7,13 @@ const todosReducer = (state = initialTodosState, action) => {
     switch (action.type) {
         case FETCH_TODOS:
             return action.payload
+
         case ADDED:
             return [
                 ...state,
                 {
                     id: nextTodoId(state),
-                    text:  action.payload,
+                    text: action.payload,
                     completed: false
                 }
             ]
@@ -29,11 +30,19 @@ const todosReducer = (state = initialTodosState, action) => {
         case COLORSELECTED:
             const { todoId, color } = action.payload;
             return state.map(todo => {
-                if (todo.id !== todoId) return todo;
-                return {
-                    ...todo,
-                    color: color
+                if ((todo.id === todoId) && (todo.color !== color)) {
+                    return {
+                        ...todo,
+                        color: color
+                    }
                 }
+                else if ((todo.id === todoId) && todo.color === color) {
+                    return {
+                        ...todo,
+                        color: ''
+                    }
+                }
+                return todo;
             })
 
         case DELETED:
